@@ -6,7 +6,7 @@ function Course(props) {
   )
 }
 
-function Content(props) {
+const Content = (props) => {
   return (
     <div>
       <Part part1 = {props.part1} exercises1 = {props.exercises1}/>
@@ -17,7 +17,7 @@ function Content(props) {
   )
 }
 
-function Total(props) {
+const Total = (props) => {
   return (
     <div>
       <p>Number of exercises {props.total} </p>
@@ -25,7 +25,7 @@ function Total(props) {
   )
 }
 
-function Part(props) {
+const Part = (props) => {
   return (
     <div>
       <p>{props.part1} {props.exercises1}</p>
